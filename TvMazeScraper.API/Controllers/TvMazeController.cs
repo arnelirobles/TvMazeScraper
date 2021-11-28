@@ -27,7 +27,7 @@ namespace TvMazeScraper.API.Controllers
         [HttpGet("Shows")]
         public ActionResult GetShows(int pageNumber = 1, int pageSize = 20)
         {
-            var result = _showService.GetShows(pageNumber, pageNumber);
+            var result = _showService.GetShows(pageNumber, pageSize);
             return Ok(result);
         }
 
